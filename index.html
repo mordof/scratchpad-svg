@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            :root {
+                --scratchpad-size: 1200px;
+            }
+
+            #scratchpad {
+                position: absolute;
+                left: calc(50% - (var(--scratchpad-size) / 2));
+                top: 10px;
+                width: var(--scratchpad-size);
+                height: var(--scratchpad-size);
+                border: 1px solid black;
+                background-color: #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="scratchpad"></div>
+        <script type="module" src="./main.mjs"></script>
+    </body>
+</html>
